@@ -1,0 +1,21 @@
+.employee {
+  border: 2px solid black;
+  width: 250px;
+  height: 360px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+
+  &__data {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    &--name {
+      font-weight: 700;
+    }
+
+    &--role {
+      height: 112px;
+    }
+  }
+}
