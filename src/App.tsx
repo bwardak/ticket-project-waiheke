@@ -1,6 +1,5 @@
 // import { useState } from 'react'
 import './app.scss'
-import TicketCounter from './components/Counter/Counter';
 import EmployeeTiles from './components/Employee/employee';
 import team from './data/team'
 

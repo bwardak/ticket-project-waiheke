@@ -21,8 +21,8 @@ const TicketCounter = () => {
       <h2 className="ticket-counter__heading">Tickets</h2>
       <p className="ticket-counter__counter">{tickets}</p>
       <div className="ticket-amount">
-        <p className="ticket-amount__decrease">-</p>
-        <p className="ticket-amount__increase">+</p>
+        <p className="ticket-amount__decrease" onClick={handleTicketDecrement}>-</p>
+        <p className="ticket-amount__increase" onClick={handleTicketIncrement}>+</p>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 .employee {
   border: 2px solid black;
-  width: 250px;
+  width: 270px;
   height: 360px;
   margin: 20px;
   display: flex;
@@ -12,10 +12,13 @@
     
     &--name {
       font-weight: 700;
+      font-size: 1.8rem;
     }
 
     &--role {
+      margin-top: -10px;
       height: 112px;
+      font-size: 1.1rem;
     }
   }
 }
