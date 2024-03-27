@@ -4,7 +4,7 @@ import team from './data/team'
 import SearchBox from './components/SearchBox/SearchBox';
 import { FormEvent, useState } from 'react';
 
-function App() {
+const App = () => {
   const heading = "Ticket Tracker"
   const [searchTerm, setSearchTerm] = useState<string>("")
   
