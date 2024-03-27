@@ -1,4 +1,3 @@
-
 import './Counter.scss'
 
 type TicketCounter = {

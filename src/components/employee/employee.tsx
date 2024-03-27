@@ -1,11 +1,6 @@
-
 import { useState } from "react";
 import TicketCounter from "../Counter/Counter";
 import "./Employee.scss";
-
-
-
-
 
 type Employees = {
   id: number;
@@ -33,8 +28,6 @@ const EmployeeTiles = ({ id, name, role, tickets, searchedEmployee }: Employees)
   const employeeName = name;
   const employeeRole = role;
 
-
-  
   const employeeById = searchedEmployee.find(employee => employee.id === id)
   
   if(employeeById){
@@ -43,7 +36,6 @@ const EmployeeTiles = ({ id, name, role, tickets, searchedEmployee }: Employees)
     throw new Error("Could not match the ID")
   }
   
-
   return (
     <div className="employee">
       <p className="employee__data employee__data--name">{employeeName}</p>

@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import './app.scss'
 import EmployeeTiles from './components/Employee/employee';
 import team from './data/team'
@@ -8,9 +7,7 @@ import { FormEvent, useState } from 'react';
 function App() {
   const heading = "Ticket Tracker"
   const [searchTerm, setSearchTerm] = useState<string>("")
-  console.log(searchTerm);
   
-
   const handleInput = (event: FormEvent<HTMLInputElement>) => {
     const newInput = event.currentTarget.value.toLowerCase();
     setSearchTerm(newInput)
@@ -19,11 +16,6 @@ function App() {
   const searchedEmployee = team.filter((employee) => 
     employee.name.toLowerCase().includes(searchTerm)
   )
-
-  console.log(team[0].name.toLowerCase());
-  console.log(searchedEmployee);
-  
-  
 
   return (
     <div className="tracker-container">
