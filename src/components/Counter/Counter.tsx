@@ -1,20 +1,14 @@
-import { useState } from "react";
+
 import './Counter.scss'
 
-const TicketCounter = () => {
-  const [tickets, setTickets] = useState<number>(0);
+type TicketCounter = {
+  tickets: number;
+  handleTicketIncrement: () => void;
+  handleTicketDecrement: () => void;
+};
 
-  const handleTicketIncrement = () => {
-    setTickets(tickets + 1)
-  }
-
-  const handleTicketDecrement = () => {
-    if (tickets <= 0) {
-      setTickets(0)
-    } else {
-      setTickets(tickets - 1)
-    }
-  }
+const TicketCounter = ({tickets, handleTicketIncrement, handleTicketDecrement}: TicketCounter) => {
+  
 
   return (
     <div className="ticket-counter">

@@ -8,7 +8,7 @@ type SearchBoxProps = {
   handleInput: FormEventHandler<HTMLInputElement>
 }
 
-const searchBox = ({ label, searchTerm, handleInput }: SearchBoxProps) => {
+const SearchBox = ({ label, searchTerm, handleInput }: SearchBoxProps) => {
     
   return (
     <div className='search-box'>
@@ -25,4 +25,4 @@ const searchBox = ({ label, searchTerm, handleInput }: SearchBoxProps) => {
   );
 };
 
-export default searchBox
+export default SearchBox
