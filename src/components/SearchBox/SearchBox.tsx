@@ -1,5 +1,4 @@
 import { FormEventHandler } from 'react';
-import team from '../../data/team'
 import './SearchBox.scss'
 
 type SearchBoxProps = {
@@ -20,6 +19,7 @@ const SearchBox = ({ label, searchTerm, handleInput }: SearchBoxProps) => {
       name={label}
       value={searchTerm}
       onInput={handleInput}
+      placeholder="Search name here..."
       className='search-box__input' />
     </div>
   );

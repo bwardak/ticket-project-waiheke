@@ -2,7 +2,7 @@
 import { useState } from "react";
 import TicketCounter from "../Counter/Counter";
 import "./Employee.scss";
-import team from "../../data/team";
+
 
 
 

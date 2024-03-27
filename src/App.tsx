@@ -28,22 +28,28 @@ function App() {
   return (
     <div className="tracker-container">
       <h1 className="tracker-container__heading">{heading}</h1>
-      <SearchBox 
-      label='employee'
-      handleInput={handleInput}
-      searchTerm={searchTerm}
-      />
-      <div className="employees-container">
-        {searchedEmployee.map((member) => (
-          <EmployeeTiles 
-          key={member.id}
-          id={member.id}
-          name={member.name}
-          role={member.role}
-          tickets={member.tickets}
-          searchedEmployee={searchedEmployee}
+      <div className='tickets-container'>
+        <div className="search-box-container">
+          <SearchBox
+            label="Employee:"
+            handleInput={handleInput}
+            searchTerm={searchTerm}
           />
-        ))}
+        </div>
+        <div className="employee-tiles-container">
+          <div className="employees-container">
+            {searchedEmployee.map((member) => (
+              <EmployeeTiles
+                key={member.id}
+                id={member.id}
+                name={member.name}
+                role={member.role}
+                tickets={member.tickets}
+                searchedEmployee={searchedEmployee}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

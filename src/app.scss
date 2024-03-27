@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: rgb(255, 255, 255);
+  background-image: url("https://as2.ftcdn.net/v2/jpg/04/89/85/53/1000_F_489855359_1lDC9h0l0dzEEmarcMoCgV95CkpRIL1s.jpg");
+}
+
 .heading {
   text-align: center;
   font-size: 3rem;
@@ -15,7 +20,7 @@
 }
 
 .tracker-container {
-  border: 2px solid black;
+  border: 2px solid rgb(80, 80, 80);
   height: calc(100% - 40px);
   margin: 20px;
   
@@ -25,13 +30,19 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   padding: 30px;
-  background-color: gray;
+  background-color: rgb(80, 80, 80);
+  color: lightpink;
   }
-  
-  .employees-container {
+
+  .tickets-container {
+    background-color: rgba(255, 182, 193, 0.568);
+
+
+    .employees-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: rgb(170, 168, 168);
   }
+  }
+  
 }
