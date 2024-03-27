@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   background-color: rgb(255, 255, 255);
   background-image: url("https://as2.ftcdn.net/v2/jpg/04/89/85/53/1000_F_489855359_1lDC9h0l0dzEEmarcMoCgV95CkpRIL1s.jpg");
 }
@@ -23,6 +23,7 @@ html {
   border: 2px solid rgb(80, 80, 80);
   height: calc(100% - 40px);
   margin: 20px;
+  background-color: white;
   
   &__heading {
   text-align: center;
@@ -36,7 +37,6 @@ html {
 
   .tickets-container {
     background-color: rgba(255, 182, 193, 0.568);
-
 
     .employees-container {
     display: flex;

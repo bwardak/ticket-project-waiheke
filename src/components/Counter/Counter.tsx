@@ -10,12 +10,12 @@ type TicketCounter = {
 const TicketCounter = ({tickets, handleTicketIncrement, handleTicketDecrement}: TicketCounter) => {
   
   const ticketColor = {
-    color: tickets >= 10 ? 'red' : 'black',
+    color: tickets >= 10 ? "red" : "rgb(80, 80, 80)",
   };
 
   return (
     <div className="ticket-counter">
-      <h2 className="ticket-counter__heading">Tickets</h2>
+      <h2 className="ticket-counter__heading" style={ticketColor}>Tickets</h2>
       <p className="ticket-counter__counter" style={ticketColor}>{tickets}</p>
       <div className="ticket-amount">
         <p className="ticket-amount__decrease" onClick={handleTicketDecrement}>-</p>

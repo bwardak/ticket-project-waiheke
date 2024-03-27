@@ -1,7 +1,7 @@
 
 .ticket-counter {
   // background-color: red
-  height: 210px;
+  height: 200px;
   width: calc(100% - 30px);
   display: flex;
   flex-direction: column;
@@ -30,10 +30,12 @@
     
     &__decrease {
       cursor: pointer;
+      color: rgb(80, 80, 80);
     }
 
     &__increase {
       cursor: pointer;
+      color: rgb(80, 80, 80);
     }
   }
 }
